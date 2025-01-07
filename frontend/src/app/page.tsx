@@ -1,3 +1,4 @@
+"use_client"
 
 type typeBank = {
   id: number;
@@ -7,7 +8,7 @@ type typeBank = {
 
 
 export default async function Home() {
-  const data = await fetch("http://localhost:3003");
+  const data = await fetch("http://localhost:3001");
   const allbank = await data.json();
   
   return (
